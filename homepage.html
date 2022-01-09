@@ -1,0 +1,84 @@
+<html>
+	<head>
+    
+    <title>Welcome To My Homepage</title>
+	
+	<style type="text/css">
+	
+	a{text-decoration:none} 
+	
+	</style> 
+	</head>
+
+	<body>
+		<style>
+		
+            body {
+        background-image: url('images/Beige Organic Floral Quotes Desktop Wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+        }
+	
+        </style>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1 align="center" style="color:#CD6155"><font size="15" face="Comic Sans MS">-WELCOME TO MY WEBSITE-</font></h1>
+		<p>
+		<body onload="startTime()">
+
+		 <div id="txt" align="center" style="color:#CD6155" ></div>
+
+		<script>
+		function startTime() {
+		  const today = new Date();
+		  let h = today.getHours();
+		  let m = today.getMinutes();
+		  let s = today.getSeconds();
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+		  setTimeout(startTime, 1000);
+		  }
+
+		function checkTime(i) {
+		  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		  return i;
+		}
+		</script>
+		
+		<h1 align="center" style="color;black;" <font size="10" color="grey" face="Comic Sans MS">"LIST FOR SUB MENU"</font></h1> 
+		
+		<P>
+		<P>
+		<table align="center" border="2" width="50%" bgcolor="#D6DBDF">
+		<tr> 
+		    <P><th><a href="biodata.html" target="content">BIODATA</a></th></p>
+		<tr> 
+		    <P><th><a href="gallery.html" target="content">GALLERY</a></th></p>
+		<tr> 
+		    <P><th><a href="education.html" target="content">EDUCATION</a></th></p>
+		<tr> 
+		    <P><th><a href="BakingTime.html" target="content">BAKING TIME</a></th></p>
+		<tr> 
+		    <P><th><a href="F6_Memories.html" target="content">FORM6 MEMORIES</a></th></p>
+		<tr> 
+		    <P><th><a href="MyHometown.html" target="content">MY HOMETOWN</a></th></p>
+		<tr> 
+		    <P><th><a href="MyBestfriend.html" target="content">MY BESTFRIEND</a></th></p>
+		<tr> 
+		    <P><th><a href="MyFamily.html" target="content">MY FAMILY</a></th></p>
+		<tr> 
+		    <P><th><a href="foodies.html" target="content"> FOODIES </a></th></p>
+		<P>
+
+		</div>
+		
+		    </table>
+			
+		</body>
+
+</html>
